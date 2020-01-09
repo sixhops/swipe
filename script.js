@@ -2,6 +2,7 @@ const touchSurface = document.querySelector('section');
 const div1 = document.querySelector('div.one');
 const div2 = document.querySelector('div.two');
 const div3 = document.querySelector('div.three');
+const msgConsole = document.querySelector('p');
 
 var swipeDir
 var startX
@@ -107,6 +108,6 @@ touchSurface.addEventListener('touchend', function (e) {
       swipeDir = (distY < 0) ? 'up' : 'down' // if dist traveled is negative, it indicates up swipe
     }
   }
-  console.log(`swipe ${swipeDir}, current box is ${curBox}`);
+  msgConsole.textContent = `swipe ${swipeDir}, current box is ${curBox}`;
   e.preventDefault()
 }, false)

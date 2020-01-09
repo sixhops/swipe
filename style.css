@@ -7,11 +7,21 @@ body {
   height: 100vh;
 }
 div {
-  width: calc(100vw - 10%);
+  width: 100vw;
   height: 400px;
-  background: yellow;
   margin: auto;
   position: absolute;
-  left: 5%;
   top: 120px;
+}
+div.one {
+  background: yellow;
+  right: -100vw;
+}
+div.two {
+  background: red;
+  left: 0;
+}
+div.three {
+  background: blue;
+  left: 100vw;
 }
